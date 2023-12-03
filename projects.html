@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathryn Nichols</title>
+
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/iconImg.png">
+    <script src="https://kit.fontawesome.com/5dd540290c.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+    <a href = "#main" id = "skip">  Skip to Main Content</a>
+    <header>
+    <nav>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="work.html">Work Experience</a>
+            <a href="projects.html" class = "active">Projects</a>
+            <a href = "https://www.linkedin.com/in/kathrynpnichols/"><i class="fa-brands fa-linkedin"></i></a> 
+            <button id = "email" onclick="openEmailTemplate()">
+                <i class="fa-solid fa-envelope"></i>
+            </button> 
+        </div>
+    </nav>
+    </header>
+    <button type = "button" onclick="topScroll()" id = "scrollButton" title = "Scroll to Top">Back to Top <i class='far fa-arrow-alt-circle-up'></i></button>
+    <main id = "main">
+        <h1>Here are the Projects I've Completed:</h1>
+    <div class = "cards">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/td.png" alt="Talking Dog Logo" style="width:400px;height:400px;">
+              </div>
+              <div class="flip-card-back">
+                <div class="progress-bar" id="myBar"></div>
+                <h1>Talking Dog Final Project</h1>
+                <h3>Multitouch Campaign and Final Deliverable</h3>
+                <p>Assisted in creating the final deliverable for PAWS Atlanta in Adobe’s In-Design, a comprehensive booklet of all deliverables and campaigns created for PAWS Atlanta, including demographic data graphs, client statistics, and newsletter templates</p>
+                <p>Designed the final intern deliverable, a 40-slide powerpoint on intern’s accomplishments and roles throughout the year</p>
+                <a href = "https://drive.google.com/file/d/1Ypmvwlml6jigY-YqOC2TVqhCJ7klVMai/view?usp=sharing">Click to View PAWS Atlanta Final Deliverable</a>
+                <a href = "https://docs.google.com/presentation/d/1HmQ5Q4ufmeCRNoHMgwY1GLy65pvpD7N9/edit?usp=sharing&ouid=117667297206836451951&rtpof=true&sd=true">Click to View Final Intern Presentation</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/piazza.png" alt="Piazza Logo" style="width:400px;height:400px;">
+              </div>
+              <div class="flip-card-back">
+                <div class="progress-bar" id="myBar"></div>
+                <h1>Machine Learning Labeling Algorithm</h1>
+                <h3>Project for EECS 280</h3>
+                <p>Implemented machine learning input models to teach my program how to correctly associate certain phrases and words with topics</p>
+                <p>Created an algorithm that improved exponentially with accuracy as more input was used to 'teach' the computers algorithm</p>
+                <p>Correcetly categorized thousands of posts using only hundreds of inputs for algorithm derivation</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/euchre.png" alt="Playing Card" style="width:400px;height:400px;">
+              </div>
+              <div class="flip-card-back">
+                <div class="progress-bar" id="myBar"></div>
+                <h1>Euchre Project</h1>
+                <h3>Project for EECS 280</h3>
+                <p>This project consisted of simulating a game of euchre with both computer players and human players. This included, deck shuffling, dealing, playing tricks, scoring, and the computer's strategy. 
+                    Computer players used a simple strategy that didn't take into account other players' cards, only taking into account the suit that was led. Human players were informed of the board state and asked for input for every decision.</p>        
+              </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/resizing.png" alt="Playing Card" style="width:400px;height:400px;">
+              </div>
+              <div class="flip-card-back">
+                <div class="progress-bar" id="myBar"></div>
+                <h1>Image Resizing Project</h1>
+                <h3>Project for EECS 280</h3>
+                <p>The purpose of this project was to resize an inputted image to specified dimensions using a technique called seam carving. 
+                    Seam carving works by finding and removing “seams” in the image that pass through the least important pixels. 
+                    After having reduced the image to the right dimensions, the program would save the resized versions to a new file with the dimensions in the file name.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+        
+        
+
+    </div>
+    </main>
+    <footer>SI 339 Final Project</footer>
+
+    <script>
+        let myButton = document.querySelector("#scrollButton");
+
+        function topScroll(){
+            console.log('top!');
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

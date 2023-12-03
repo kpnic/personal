@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/iconImg.png">
+    <script src="https://kit.fontawesome.com/5dd540290c.js" crossorigin="anonymous"></script>
+
+    <title>Education</title>
+</head>
+<body>
+    <a href = "#main" id = "skip">  Skip to Main Content</a>
+    <header>
+    <nav>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="active" onclick="myFunction()">Education
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#esg">Engineering Student Government</a>
+                    <a href="#nobe">National Organization of Business and Engineering</a>
+                    <a href="#tek">Tau Epsilon Kappa Professional Fraternity</a>
+                    <a href="#dg">Delta Gamma</a>
+            </div>
+            <a href="work.html">Work Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href = "https://www.linkedin.com/in/kathrynpnichols/"><i class="fa-brands fa-linkedin"></i></a> 
+            <button id = "email" onclick="openEmailTemplate()">
+                <i class="fa-solid fa-envelope"></i>
+            </button> 
+            </div> 
+        </div>
+    </nav>
+    </header>
+    <button type = "button" onclick="topScroll()" id = "scrollButton" title = "Scroll to Top">Back to Top <i class='far fa-arrow-alt-circle-up'></i></button>
+    <main id = "main">
+    <div class = "edu">
+        <h2 id = "title">Education</h2>
+        <h3 id = "title2">University of Michigan, College of Engineering</h3>
+        <h4>Computer Science Engineering Major with a minor in User Experience and a minor in Business</h4>
+        <h5>GPA: 3.8</h5>
+        <h4>Relevant Coursework:</h4>
+        <p>Programming and Introductory Data Structures; Marketing Management; Web Design,
+            Development, and Accessibility; Discrete Math; Probability and Statistics</p>
+        <h4>Honors and Awards:</h4>
+        <p>Lockheed Martin STEM Scholarship Program (2023), University of Michigan’s College of Engineering
+            Dean’s Honor List (Fall 2022, Winter 2023)</p>
+    </div>
+
+    <div class = "sub">
+        <img src="images/esg.png" width = "100" alt="ESG Logo">
+        <div id = "esg">
+            <h3>Engineering Student Government</h3>
+            <h4>Senator and Funding Committee</h4>
+            <ul>
+                <li>Representing approximately 8,000 engineering students, overseeing a budget of $35,000 to allocate funds to various engineering organizations based on careful review of proposals and collaboration with administration</li>
+                <li>Developed strong communication and negotiation skills while working closely with administrators, ensuring that funding decisions aligned with student government goals and represented the best interests of the diverse student body</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class = "sub">
+        <img src="images/nobe.png" width = "100" alt="NOBE Logo">
+        <div id = "nobe">
+            <h3>National Organization of Business and Engineering</h3>
+            <h4>Consultant</h4>
+            <ul>
+                <li>Collaborated on a team with 4 other students to provide consulting services to a local nonprofit on a project focused on developing strategies to bolster their membership base</li>
+                <li>Conducted in-depth market research using member surveys and interviews, deriving insights to comprehend and target potential members effectively</li>
+            </ul>   
+        </div>
+    </div>
+    <div class = "sub">
+        <img src="images/tek.png" width = "100" alt="Tau Epsilon Kappa Logo">
+        <div id = "tek">
+            <h3>Tau Epsilon Kappa Professional Fraternity</h3>
+            <h4>Pledge Class President</h4>
+            <ul>
+                <li>Elected Pledge Class President for a group of 12 dedicated individuals within a fraternity comprising 80 active members.</li>
+                <li>Successfully managed and coordinated various tasks, maintained open communication with the executive board, and facilitated the planning and execution of bi-weekly social events and study sessions.</li>
+                <li>Actively pursued self-improvement and technical development during my tenure with Tau Epsilon Kappa, including resume and interview workshops, networking events, guest speakers, and leetcode sessions.</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class = "sub">
+        <img src="images/dg.png" width = "100" alt="Delta Gamma Logo">
+        <div id = "dg">
+            <h3>Delta Gamma</h3>
+            <h4>Director of Scholarship, Director of Interfraternal Events, Social Chair</h4>
+            <ul>
+                <li>Successfully planned and executed tri-weekly events for a 250-member sorority, along with 10 large-scale events for over 300 attendees, showcasing leadership and organizational skills while fostering an inclusive and vibrant social community.</li>
+                <li>Implements the chapter scholarship program and helps the chapter achieve its academic goals</li>
+            </ul>
+        </div>
+    </div>
+    </main>
+    <footer>SI 339 Final Project</footer>
+</body>
+</html>
+

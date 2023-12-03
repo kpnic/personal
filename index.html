@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathryn Nichols</title>
+
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/iconImg.png">
+    <script src="https://kit.fontawesome.com/5dd540290c.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+    <a href = "#main" id = "skip">  Skip to Main Content</a>
+    <header>
+    <nav>
+        <div class="navbar">
+            <a href="index.html" class = "active">Home</a>
+            <a href="education.html">Education</a>
+            <a href="work.html">Work Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href = "https://www.linkedin.com/in/kathrynpnichols/"><i class="fa-brands fa-linkedin"></i></a>
+            <button id = "email" onclick="openEmailTemplate()">
+                <i class="fa-solid fa-envelope"></i>
+            </button> 
+            </div>
+            </div> 
+        </div>
+    </nav>
+    </header>
+    <button type = "button" onclick="topScroll()" id = "scrollButton" title = "Scroll to Top">Back to Top <i class='far fa-arrow-alt-circle-up'></i></button>
+    <main id = "main">
+    <div id = "header">
+        <h3 id = "intro">Hey, I'm</h3>
+        <h1 id = "name">Kathryn Nichols!</h1>
+    </div>
+
+    <div class = "about">
+        <h1>About Me:</h1>
+        <p>
+            Hi! I am a current University of Michigan student studying Computer Science Engineering with intended minors in Business and User Experience Design! I am from Athens, GA. 
+            I'll be working at Lockheed Martin this summer as a Software Rngineer in their Space Department! I love to play tennis, swim, and to paint! I am currently a Senator on Engineering 
+            Student Government, and I hold a few positions in my sorority. If you want to learn more about me, feel free to explore my site!
+        </p>
+
+    </div>
+
+    <div class = "skills">
+        <h2>Technical Skills</h2>
+        <p>C++</p>
+        <div class="container">
+          <div class="skill c">70%</div>
+        </div>
+
+        <p>HTML/CSS</p>
+        <div class="container">
+          <div class="skill hc">70%</div>
+        </div>
+
+        <p>Java</p>
+        <div class="container">
+          <div class="skill java">50%</div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="container">
+          <div class="skill js">40%</div>
+        </div>
+        <p>Python, Microsoft 365, Adobe Creative Cloud - Illustrator and Photoshop, Canva</p>
+    
+    </div>
+
+    <div class = "skills">
+        <h2>Other Skills:</h2>
+        <p>Digital Marketing, Project Management, Customer Service and Relations, Communication, Consulting</p>
+    
+    </div>
+
+    <div class = "resume">
+        <a href=https://drive.google.com/file/d/16aFUMgXn-T6ahTQullxwy3Xf7yJ1NSy7/view?usp=sharing">Click to Download My Resume!</a>
+    </div>
+    </main>
+    <footer>SI 339 Final Project</footer>
+
+    <script>
+        let myButton = document.querySelector("#scrollButton");
+
+        function topScroll(){
+            console.log('top!');
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+        <div class="popup-container" id="popupContainer">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">
+                    <i class="fa fa-window-close" aria-hidden="true"></i>
+                </span> 
+                <h2>Welcome to My Website!</h2>
+                <p>I'm glad you're here. Enjoy your stay!</p>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+
+</body>
+</html>
