@@ -22,7 +22,7 @@ main{
     font-size: 80px;
     font-family: 'Oswald', sans-serif;
     text-align: left;
-    color: white;
+    color: #5C5C5C;
     padding-left: 50px;
 }
 h1{
@@ -38,10 +38,15 @@ h2 {
 #intro{
     text-align: left;
     font-style: italic;
-    color: white;
+    color: #5C5C5C;
     font-size: 50px;
     padding-left: 150px;
     padding-top: 200px;
+}
+
+#intro, #name{
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
 }
 #header{
     background-image: url("../images/about.JPG");
@@ -103,7 +108,7 @@ nav a{
     display: block;
 
 }
-nav a:hover, nav a:focus, .active, #email:hover, #email:focus{
+nav a:hover, nav a:focus, .active, .email:hover, .email:focus{
     color: black;
     font-weight: bold;
     background-color: #8ead93;
@@ -509,4 +514,19 @@ footer{
 
 .edu{
     padding-left: 30px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.email{
+    background-color: rgb(255, 255, 255,0.1);
 }
