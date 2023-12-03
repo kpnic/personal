@@ -530,3 +530,8 @@ footer{
 .email{
     background-color: rgb(255, 255, 255,0.1);
 }
+
+.flip-card:focus{
+    transform: rotateY(180deg);
+}
+
