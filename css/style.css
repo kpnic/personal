@@ -430,7 +430,7 @@ footer{
   }
   .flip-card h3{
     font-size: 30px;
-    color: rgb(162, 192, 152)
+    color: rgb(204, 240, 192)
   }
 
   .flip-card a{
@@ -479,7 +479,7 @@ footer{
   
   /* Style the back side */
   .flip-card-back {
-    background-color: rgb(62, 83, 60);
+    background-color: #648863;
     color: white;
     transform: rotateY(180deg);
     border-radius: 30px;
